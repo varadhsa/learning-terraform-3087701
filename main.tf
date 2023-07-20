@@ -36,7 +36,7 @@ module "blog_vpc" {
 
 module "autoscaling" {
   source  = "terraform-aws-modules/autoscaling/aws"
-  version = "6.${var.environment.network_prefix}"
+  version = "6.10.0"
 
   # insert the 1 required variable here
   name = "${var.environment.name}-blog"
